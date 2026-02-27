@@ -1,0 +1,17 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "SAS.connectionProfiles": {
+        "activeProfile": "",
+        "profiles": {}
+    },
+    "workbench.colorTheme": "SAS Theme"
+    "multiCommand.commands": [
+  {
+    "command": "multiCommand.copyToTop",
+    "sequence": [
+      "cursorTopSelect",
+      "editor.action.clipboardCopyAction"
+    ]
+  }
+]
+}

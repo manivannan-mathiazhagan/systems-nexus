@@ -1,0 +1,8 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "SAS.connectionProfiles": {
+        "activeProfile": "",
+        "profiles": {}
+    },
+    "workbench.colorTheme": "SAS Theme"
+}

@@ -1,0 +1,37 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Copy to top (multiCommand version)
+    {
+        "key": "ctrl+alt+z",
+        "command": "multiCommand.copyToTop",
+        "when": "editorTextFocus"
+    },
+    // SAS comment / uncomment for entire line using /* ... */
+    {
+        "key": "ctrl+alt+/",
+        "command": "multiCommand.sasBlockCommentLine",
+        "when": "editorTextFocus"
+    },
+    // Upper / lower case
+    {
+        "key": "ctrl+shift+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+1",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
+    },
+    // Keep your existing Output panel tweaks
+    {
+        "key": "ctrl+shift+y backspace",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "-workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    }
+]

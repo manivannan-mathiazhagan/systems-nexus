@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "executable": "C:\\Program Files\\Python313\\python.exe",
+    "prefix": "C:\\Program Files\\Python313",
+    "version": "3.13.1.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "C:\\Program Files\\Python313\\python.exe"
+    ]
+  },
+  "symlinks": [
+    [
+      "C:\\Program Files\\Python313\\python.exe",
+      {
+        "secs_since_epoch": 1733259492,
+        "nanos_since_epoch": 0
+      },
+      {
+        "secs_since_epoch": 1733259492,
+        "nanos_since_epoch": 0
+      }
+    ]
+  ]
+}
