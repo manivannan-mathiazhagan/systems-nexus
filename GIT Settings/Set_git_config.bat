@@ -10,7 +10,7 @@ set "PERSONAL_ROOT=P:\BSP_LocalDev\Manivannan.Mathialag\zzzz_My_SAS_Files\My Git
 REM =========================================================
 REM Personal Git identity
 REM =========================================================
-set "PERSONAL_NAME=Coder_Mani"
+set "PERSONAL_NAME=Mani (SAS | PY)"
 set "PERSONAL_EMAIL=manivannan.mathi@outlook.com"
 
 REM =========================================================
