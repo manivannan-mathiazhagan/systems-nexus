@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-05-09T23:20:43Z",
+  "_captured_run_id": "r_019e0f0761dd7da08b3d16ea2a14b7ed",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Read 15 rows from DATALINES.",
+    "NOTE: Wrote dm (15 rows, 5 columns).",
+    "NOTE: PROC FREQ statement used.",
+    "NOTE: PROC MEANS statement used."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

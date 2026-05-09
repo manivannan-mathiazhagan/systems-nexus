@@ -1,0 +1,8 @@
+{
+  "bundle": "t001_jenner_demo",
+  "source_file": null,
+  "source_blob_sha": null,
+  "source_commit": "2d1ac5655a2290309bb0498ffbf8dc30bb409e59",
+  "tier": "demo",
+  "notes": "Small SDTM-DM-style demo: inline DATALINES (15 demographic rows), derives AGEGRP, summarizes ARM*AGEGRP via PROC FREQ and ARM mean age via PROC MEANS. No external data. Repo is a SAS biostatistics macro library: 31 of 36 .sas files are pure %macro defs needing an external caller; the remaining 5 top-level scripts depend on external SDTM/ADaM/RAW/VTDATA libnames or a hardcoded Y:\\ Excel path that aren't reproducible outside the original clinical-trial environment. Demo bundle was authored to give the owner a tangible first taste of running a SAS program on Jenner."
+}
