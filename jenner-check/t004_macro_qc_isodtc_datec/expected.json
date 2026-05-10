@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-05-10T14:00:00Z",
+  "_captured_run_id": "r_019e10abd17e7c0184ec7a389b7126f2",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Read 5 rows from DATALINES.",
+    "NOTE: Wrote crf_dates (5 rows, 4 columns).",
+    "NOTE: Wrote crf_dates_iso (5 rows, 79 columns).",
+    "NOTE: PROC PRINT completed: 5 observations printed, 2 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
