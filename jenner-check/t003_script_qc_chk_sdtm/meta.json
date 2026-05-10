@@ -1,0 +1,8 @@
+{
+  "bundle": "t003_script_qc_chk_sdtm",
+  "source_file": "SAS Programs/QC_CHK_SDTM.sas",
+  "source_blob_sha": "2fd187e0e4b4ffc3874b212d7a9a7eeaaed2cc69",
+  "source_commit": "2d1ac5655a2290309bb0498ffbf8dc30bb409e59",
+  "tier": "real_data",
+  "notes": "Top-level QC snippet: PROC FREQ on SUPPAE production and Val_SUPPAE validation by USUBJID*QNAM, merge by both keys, keep mismatched counts. Mock 6-row SUPPAE/Val_SUPPAE built inline; libref seap02. resolved to WORK; OUT= rename hoisted into a follow-on DATA step rename. Macro variable substitutions (DS1N/VARS/MRGVARS) and merge body verbatim."
+}

@@ -1,0 +1,8 @@
+{
+  "bundle": "t002_script_qc_chk_tab",
+  "source_file": "SAS Programs/QC_CHK_TAB.sas",
+  "source_blob_sha": "2b95ef8fb94dccd15bd0a4d4187c1471356232bd",
+  "source_commit": "2d1ac5655a2290309bb0498ffbf8dc30bb409e59",
+  "tier": "real_data",
+  "notes": "Top-level QC snippet: PROC FREQ on PROD and VALI, merge by _1, keep mismatched counts. Mock 9-row PROD and VALI tables built inline; the OUT= rename was hoisted into a follow-on DATA step rename for portability. The merge body and subsetting condition are verbatim."
+}

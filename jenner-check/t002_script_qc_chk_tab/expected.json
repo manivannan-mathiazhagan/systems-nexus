@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-05-10T13:50:00Z",
+  "_captured_run_id": "r_019e10a4f5b974a3b5a20afc05f5aebb",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote PROD (9 rows, 1 columns).",
+    "NOTE: Wrote VALI (9 rows, 1 columns).",
+    "NOTE: Output dataset PRO_FRQ_RAW has 4 observations and 5 variables.",
+    "NOTE: Output dataset VAL_FRQ_RAW has 4 observations and 5 variables.",
+    "NOTE: PROC PRINT completed: 2 observations printed, 3 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

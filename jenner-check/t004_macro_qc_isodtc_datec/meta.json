@@ -1,0 +1,8 @@
+{
+  "bundle": "t004_macro_qc_isodtc_datec",
+  "source_file": "SAS Programs/qc_isodtc.sas",
+  "source_blob_sha": "431c1949e76763b2764c87937c3634cd282290e1",
+  "source_commit": "2d1ac5655a2290309bb0498ffbf8dc30bb409e59",
+  "tier": "real_data",
+  "notes": "Calls qc_isodtc verbatim in DATEC mode against a 5-row dataset of (year, month abbreviation, day) character pieces. Tests the array-based JAN/FEB/.../DEC -> 01/02/.../12 lookup, numeric-month digit handling, and final ISO 8601 assembly via catx. The macro's other parameter modes (DATETIMEN/DATEN/TIMEN/TIMEC) are out of scope for this bundle."
+}

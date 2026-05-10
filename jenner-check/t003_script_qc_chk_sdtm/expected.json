@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-05-10T13:55:00Z",
+  "_captured_run_id": "r_019e10a84da87ef0856883cf6618118d",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote SUPPAE (6 rows, 3 columns).",
+    "NOTE: Wrote Val_SUPPAE (6 rows, 3 columns).",
+    "NOTE: Output dataset PRO_FRQ_RAW has 4 observations and",
+    "NOTE: Output dataset VAL_FRQ_RAW has 4 observations and",
+    "NOTE: PROC PRINT completed: 2 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
