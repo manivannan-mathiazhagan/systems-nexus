@@ -64,6 +64,11 @@ h3 {
     margin-top: 22px;
 }
 
+h4 {
+    color: #243b53;
+    margin-top: 18px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -218,6 +223,13 @@ a {
     border: 1px solid #b8d4ff;
 }
 
+.tree .restricted > summary {
+    background: #fff1f1;
+    color: #b42318;
+    font-weight: 700;
+    border: 1px solid #ffc9c9;
+}
+
 .tree .muted {
     color: #666;
     font-size: 12px;
@@ -234,6 +246,13 @@ a {
 .note {
     background: #fff8e1;
     border-left: 5px solid #f0b429;
+    padding: 12px 14px;
+    margin: 12px 0;
+}
+
+.warning-note {
+    background: #fff1f1;
+    border-left: 5px solid #d92d20;
     padding: 12px 14px;
     margin: 12px 0;
 }
@@ -407,11 +426,95 @@ td {
                 <details class="bsp" open>
                     <summary>BSP</summary>
 
-                    <details open>
+                    <details class="restricted" open>
                         <summary>_Restricted</summary>
-                        <div class="folder-line">Non-CRF Data</div>
-                        <div class="folder-line">Output</div>
-                        <div class="folder-line">SASDATA</div>
+
+                        <details open>
+                            <summary>Non-CRF Data</summary>
+                            <div class="folder-line">AE terms</div>
+                            <div class="folder-line">Lab data</div>
+                            <div class="folder-line">PK data</div>
+                            <div class="folder-line">DM reports</div>
+                            <div class="folder-line">Protocol deviations</div>
+                            <div class="folder-line">Randomization datasets</div>
+                        </details>
+
+                        <details open>
+                            <summary>Output</summary>
+
+                            <details open>
+                                <summary>Development TLFs</summary>
+                                <div class="folder-line">tables_shells</div>
+                                <div class="folder-line">listings_shells</div>
+                                <div class="folder-line">figures_shells</div>
+                                <div class="folder-line">tables_vYYYYMMDD</div>
+                                <div class="folder-line">listings_vYYYYMMDD</div>
+                                <div class="folder-line">figures_vYYYYMMDD</div>
+                            </details>
+
+                            <details open>
+                                <summary>Delivery TLFs</summary>
+                                <div class="comment-line">Deliverable-specific TLF folders can be named based on study need.</div>
+
+                                <details open>
+                                    <summary>CSR TLFs</summary>
+                                    <div class="folder-line">tables_vYYYYMMDD_dYYYYMMDD</div>
+                                    <div class="folder-line">listings_vYYYYMMDD_dYYYYMMDD</div>
+                                    <div class="folder-line">figures_vYYYYMMDD_dYYYYMMDD</div>
+                                </details>
+
+                                <details>
+                                    <summary>aCSR TLFs</summary>
+                                    <div class="folder-line">tables_vYYYYMMDD_dYYYYMMDD</div>
+                                    <div class="folder-line">listings_vYYYYMMDD_dYYYYMMDD</div>
+                                    <div class="folder-line">figures_vYYYYMMDD_dYYYYMMDD</div>
+                                </details>
+
+                                <details>
+                                    <summary>DSMB TLFs</summary>
+                                    <div class="folder-line">tables_vYYYYMMDD_dYYYYMMDD</div>
+                                    <div class="folder-line">listings_vYYYYMMDD_dYYYYMMDD</div>
+                                    <div class="folder-line">figures_vYYYYMMDD_dYYYYMMDD</div>
+                                </details>
+
+                                <details>
+                                    <summary>DMC TLFs</summary>
+                                    <div class="folder-line">tables_vYYYYMMDD_dYYYYMMDD</div>
+                                    <div class="folder-line">listings_vYYYYMMDD_dYYYYMMDD</div>
+                                    <div class="folder-line">figures_vYYYYMMDD_dYYYYMMDD</div>
+                                </details>
+                            </details>
+                        </details>
+
+                        <details open>
+                            <summary>SASDATA</summary>
+                            <details open>
+                                <summary>raw_vYYYYMMDD</summary>
+                                <div class="folder-line">Logs</div>
+
+                                <details open>
+                                    <summary>sdtm_vYYYYMMDD</summary>
+                                    <details>
+                                        <summary>Compare</summary>
+                                        <div class="folder-line">Logs</div>
+                                    </details>
+                                    <div class="folder-line">Logs</div>
+                                    <div class="folder-line">Specs</div>
+                                    <div class="folder-line">XPT</div>
+
+                                    <details open>
+                                        <summary>adam_vYYYYMMDD</summary>
+                                        <details>
+                                            <summary>Compare</summary>
+                                            <div class="folder-line">Logs</div>
+                                        </details>
+                                        <div class="folder-line">Logs</div>
+                                        <div class="folder-line">Specs</div>
+                                        <div class="folder-line">XPT</div>
+                                    </details>
+                                </details>
+                            </details>
+                        </details>
                     </details>
 
                     <details open>
@@ -502,7 +605,7 @@ td {
                     </details>
 
                     <div class="folder-line">Sample Size</div>
-                    <div class="folder-line">Documents</div>
+                    
                 </details>
 
                 <div class="folder-line">Data Mgmt</div>
@@ -518,7 +621,7 @@ td {
     </div>
 
     <p class="small">
-        _Restricted mirrors the blinded structure and is used only when restricted or unblinded access is required.
+        _Restricted mirrors the standard BSP Non-CRF Data, Output, and SASDATA structures. It should be used only when restricted or unblinded access is required.
     </p>
 </section>
 
@@ -799,6 +902,7 @@ OUTPATH = P:\Projects2\BMS\ADEPT-01\BSP\Output\Development TLFs\tables_shells
         <li>This page is a visual guide only; controlled folder structure guidance should follow the approved GDL.</li>
         <li><b>BSP</b> is the standardized Biostatistics and Statistical Programming folder.</li>
         <li>Cross-functional folders outside BSP remain unchanged.</li>
+        <li><b>_Restricted</b> mirrors the standard BSP Non-CRF Data, Output, and SASDATA structures when restricted or unblinded access is required.</li>
     </ul>
 </section>
 
