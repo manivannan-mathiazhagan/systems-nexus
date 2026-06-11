@@ -1,0 +1,8 @@
+{
+  "bundle": "t001_macro_qc_assign_seq",
+  "source_file": "SAS Programs/qc_assign_seq.sas",
+  "source_blob_sha": "c5d403869a207498bb16c7df0c6fd8de8e3e5102",
+  "source_commit": "2d1ac5655a2290309bb0498ffbf8dc30bb409e59",
+  "tier": "real_data",
+  "notes": "Calls the qc_assign_seq macro verbatim from the repo against a 6-row inline AE-style domain. Macro re-sorts by USUBJID/AESTDTC/AETERM and assigns AESEQ that resets at each new USUBJID."
+}
